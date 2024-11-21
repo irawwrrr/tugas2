@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Makanan - Periwinkle Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+        }
+        select, input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .menu-item {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Pemesanan Makanan - Periwinkle Restaurant</h1>
+        <form action="#" method="post">
+            <div class="menu-item">
+                <label for="makanan">Pilih Makanan:</label>
+                <select id="makanan" name="makanan">
+                    <option value="nasi_goreng">Nasi Goreng</option>
+                    <option value="mie_goreng">Mie Goreng</option>
+                    <option value="sate">Sate Ayam</option>
+                    <option value="ayam_bakar">Ayam Bakar</option>
+                    <option value="steak">Steak</option>
+                </select>
+            </div>
+                <div class="menu-item">
+                    <label for="jumlah">Jumlah Porsi:</label>
+                    <input type="number" id="jumlah" name="jumlah" min="1" max="10" value="1">
+                </div>
+                <div class="menu-item">
+                <label for="minuman">Pilih Minuman:</label>
+                <select id="minuman" name="minuman">
+                    <option value="es_jeruk">Es Jeruk</option>
+                    <option value="es_teh">Es Teh</option>
+                    <option value="redvelvet">Redvelvet</option>
+                    <option value="matcha">Matcha</option>
+                </select>
+            </div>
+
+            <div class="menu-item">
+                <label for="jumlah">Jumlah Porsi:</label>
+                <input type="number" id="jumlah" name="jumlah" min="1" max="10" value="1">
+            </div>
+
+            <div class="menu-item">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="menu-item">
+                <label for="alamat">Alamat Pengiriman:</label>
+                <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat pengiriman" required>
+            </div>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </div>
+
+</body>
+</html>
